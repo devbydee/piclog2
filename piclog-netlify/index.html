@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>piclog admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>piclog admin</h1>
+      <p class="sub">paste an image link, save it, then your Neocities iframe updates.</p>
+
+      <label>
+        password
+        <input id="password" type="password" autocomplete="current-password" />
+      </label>
+
+      <label>
+        image url
+        <input id="image-url" type="url" placeholder="https://cdn.imgchest.com/files/example.png" />
+      </label>
+
+      <div class="preview-wrap" aria-label="image preview">
+        <img id="preview" alt="">
+      </div>
+
+      <button id="post-btn" type="button">update piclog</button>
+
+      <p id="message"></p>
+
+      <p class="tiny">
+        widget url:
+        <a href="widget.html" target="_blank" rel="noopener noreferrer">open widget</a>
+      </p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
